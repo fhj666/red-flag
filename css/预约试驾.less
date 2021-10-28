@@ -1,0 +1,120 @@
+html{
+    font-size: 100px;
+}
+body{
+    font-size: .16rem;
+}
+.main{
+    width: 100%;
+    padding: .95rem .3rem .1rem .3rem;
+    height: 6.67rem;
+    background-image: url(../img/m_drive.647fdbd3.png);
+    background-size: 3.75rem 6.67rem;
+    color: white;
+    h1{
+        font-size: .23rem;
+    }
+    form{
+
+        .red{
+            color: #E13A45;
+        }
+        div{
+            width: 100%;
+            border-bottom:.01rem solid #e6e8ee;
+            margin-bottom: .2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .icon-arrow-down{
+                color: #E13A45;
+            }
+        }
+        .box{
+            width: 100%;
+            margin-bottom: 0rem;
+            border-bottom:none;
+            display: flex;
+            justify-content: space-between;
+            div{
+                width: 45%;
+            }
+        }
+        [type="text"]{
+            background-color: rgba(240, 255, 255, 0);
+            height: .4rem;
+            line-height: .4rem;
+            color: white;
+            width:80%;
+        }
+        fieldset{
+            border: none;
+            legend{
+                margin-top: .2rem;
+                margin-bottom: .2rem;
+            }
+        }
+
+        [type="checkbox"]{
+            margin-top: .4rem;
+            width: 0.14rem;
+            height: 0.14rem;
+            margin-bottom: .4rem;
+        }
+        #tongyi,.red{
+            font-size: .14rem;
+            line-height: .14rem;
+        }
+        [type="button"]{
+            
+            width: 100%;
+            height: .4rem;
+            line-height: .4rem;
+            text-align: center;
+            color: white;
+            background-color: #E13A45;
+            border-radius: .05rem;
+        }
+
+
+        // 隐藏部分
+        .chexing{
+            display: none;
+            position: relative;
+            .hide_one{
+                position: absolute;
+                top:.55rem;
+                ul{
+                    position: relative;
+                    width: 100%;
+                    background-color: white;
+                    color: rgb(92, 91, 91);
+                    padding: .2rem;
+                    border-radius: .1rem;
+                    li{
+                        height: .3rem;
+                        line-height: .3rem;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: .16rem;
+                        height: .16rem;
+                        border-radius: .03rem;
+                        background-color: white;
+                        position: absolute;
+                        top: -.05rem;
+                        left: .3rem;
+                        transform: rotate(45deg);
+                    }
+
+                }
+            }
+        }
+
+       
+    }
+
+
+
+}
