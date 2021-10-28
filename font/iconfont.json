@@ -1,30 +1,16 @@
 {
-  "id": "2897755",
-  "name": "红旗",
+  "id": "",
+  "name": "",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
-  "description": "红旗",
+  "description": "",
   "glyphs": [
     {
-      "icon_id": "14732",
-      "name": "向下",
-      "font_class": "xiangxia",
-      "unicode": "e600",
-      "unicode_decimal": 58880
-    },
-    {
-      "icon_id": "1727549",
-      "name": "313指向右",
-      "font_class": "zhixiangyou",
-      "unicode": "e8f4",
-      "unicode_decimal": 59636
-    },
-    {
-      "icon_id": "2939196",
-      "name": "关闭26",
-      "font_class": "guanbi",
-      "unicode": "e64d",
-      "unicode_decimal": 58957
+      "icon_id": "1241778",
+      "name": "dizhi1",
+      "font_class": "dizhi1",
+      "unicode": "e615",
+      "unicode_decimal": 58901
     }
   ]
 }
