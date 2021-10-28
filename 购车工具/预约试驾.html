@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/预约试驾.css">
+    <link rel="stylesheet" href="../font_lyc/iconfont.css">
+
+    <script src="../js/touch.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>预约试驾</h1>
+        <form action="#">
+            <div class="chexing">
+                <input type="text" readonly>
+                <span class="iconfont icon-arrow-down"></span>
+                <!-- 隐藏的车辆型号 -->
+                <div class="hide_one">
+                    <ul>
+                        <li>红旗H5</li>
+                        <li>红旗H7</li>
+                        <li>红旗H9</li>
+                        <li>红旗E-HS3</li>
+                        <li>红旗E-HS9</li>
+                        <li>红旗HS5</li>
+                        <li>红旗HS7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="name">
+                <input type="text" placeholder="请输入姓名">
+            </div>
+            <div class="shoujihao">
+                <input type="text" placeholder="请输入手机号">
+            </div>
+            <fieldset>
+                <legend>选择经销商</legend>
+                <div class="box">
+                    <div class="sheng">
+                        <input type="text" readonly>
+                        <span class="iconfont icon-arrow-down"></span>
+                        <div class="hide_two">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shi">
+                        <input type="text" readonly>
+                        <span class="iconfont icon-arrow-down"></span>
+                        <div class="hide_three">
+                            <ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="jingxiaoshang">
+                    <input type="text" readonly>
+                    <span class="iconfont icon-arrow-down"></span>
+                    <div class="hide_four">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <input type="checkbox" name="tongyi" id="checkbox">
+            <span id="tongyi">同意</span>
+            <span class="red">《隐私设置》</span>
+            <input type="button" value="提交">
+        </form>
+
+    </div>
+</body>
+<script src="../js/预约试驾.js"></script>
+
+</html>
