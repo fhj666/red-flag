@@ -79,21 +79,37 @@ body{
 
         // 隐藏部分
         .chexing{
-            display: none;
             position: relative;
             .hide_one{
+               
+                // display: block;
+                // display: none;
+                overflow: hidden;
+                height: 0;
+                border: none;
                 position: absolute;
                 top:.55rem;
+                transition:all .2s;
                 ul{
                     position: relative;
                     width: 100%;
+                    margin-top: .1rem;
                     background-color: white;
                     color: rgb(92, 91, 91);
                     padding: .2rem;
                     border-radius: .1rem;
+                    z-index: 1;
                     li{
                         height: .3rem;
                         line-height: .3rem;
+                        font-size: .14rem;
+                        
+                    }
+                    // li选中样式
+                    .xuanzhong{
+                        font-size: .18rem;
+                        color: #409EFF;
+                        // font-weight: bold;
                     }
                     &::after{
                         content: "";
@@ -104,6 +120,55 @@ body{
                         background-color: white;
                         position: absolute;
                         top: -.05rem;
+                        left: .3rem;
+                        transform: rotate(45deg);
+                    }
+
+                }
+            }
+        }
+
+        .sheng,.shi ,.jingxiaoshang{
+            position: relative;
+            .hide_two,.hide_three,.hide_four{
+                width: 100%;
+                // display: block;
+                // display: none;
+                overflow: hidden;
+                // height: 0;
+                position: absolute;
+                bottom:.2rem;
+                transition:all .2s;
+                border: none;
+                ul{
+                    position: relative;
+                    width: 100%;
+                    margin-bottom: .1rem;
+                    background-color: white;
+                    color: rgb(92, 91, 91);
+                    padding: .2rem;
+                    border-radius: .1rem;
+                    li{
+                        height: .3rem;
+                        line-height: .3rem;
+                        font-size: .14rem;
+                        
+                    }
+                    // li选中样式
+                    .xuanzhong{
+                        // font-size: .18rem;
+                        color: #409EFF;
+                        // font-weight: bold;
+                    }
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: .16rem;
+                        height: .16rem;
+                        border-radius: .03rem;
+                        background-color: white;
+                        position: absolute;
+                        bottom: -.05rem;
                         left: .3rem;
                         transform: rotate(45deg);
                     }

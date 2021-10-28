@@ -74,24 +74,34 @@ body {
   border-radius: 0.05rem;
 }
 .main form .chexing {
-  display: none;
   position: relative;
 }
 .main form .chexing .hide_one {
+  overflow: hidden;
+  height: 0;
+  border: none;
   position: absolute;
   top: 0.55rem;
+  transition: all 0.2s;
 }
 .main form .chexing .hide_one ul {
   position: relative;
   width: 100%;
+  margin-top: 0.1rem;
   background-color: white;
   color: #5c5b5b;
   padding: 0.2rem;
   border-radius: 0.1rem;
+  z-index: 1;
 }
 .main form .chexing .hide_one ul li {
   height: 0.3rem;
   line-height: 0.3rem;
+  font-size: 0.14rem;
+}
+.main form .chexing .hide_one ul .xuanzhong {
+  font-size: 0.18rem;
+  color: #409EFF;
 }
 .main form .chexing .hide_one ul::after {
   content: "";
@@ -102,6 +112,88 @@ body {
   background-color: white;
   position: absolute;
   top: -0.05rem;
+  left: 0.3rem;
+  transform: rotate(45deg);
+}
+.main form .sheng,
+.main form .shi,
+.main form .jingxiaoshang {
+  position: relative;
+}
+.main form .sheng .hide_two,
+.main form .shi .hide_two,
+.main form .jingxiaoshang .hide_two,
+.main form .sheng .hide_three,
+.main form .shi .hide_three,
+.main form .jingxiaoshang .hide_three,
+.main form .sheng .hide_four,
+.main form .shi .hide_four,
+.main form .jingxiaoshang .hide_four {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0.2rem;
+  transition: all 0.2s;
+  border: none;
+}
+.main form .sheng .hide_two ul,
+.main form .shi .hide_two ul,
+.main form .jingxiaoshang .hide_two ul,
+.main form .sheng .hide_three ul,
+.main form .shi .hide_three ul,
+.main form .jingxiaoshang .hide_three ul,
+.main form .sheng .hide_four ul,
+.main form .shi .hide_four ul,
+.main form .jingxiaoshang .hide_four ul {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.1rem;
+  background-color: white;
+  color: #5c5b5b;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}
+.main form .sheng .hide_two ul li,
+.main form .shi .hide_two ul li,
+.main form .jingxiaoshang .hide_two ul li,
+.main form .sheng .hide_three ul li,
+.main form .shi .hide_three ul li,
+.main form .jingxiaoshang .hide_three ul li,
+.main form .sheng .hide_four ul li,
+.main form .shi .hide_four ul li,
+.main form .jingxiaoshang .hide_four ul li {
+  height: 0.3rem;
+  line-height: 0.3rem;
+  font-size: 0.14rem;
+}
+.main form .sheng .hide_two ul .xuanzhong,
+.main form .shi .hide_two ul .xuanzhong,
+.main form .jingxiaoshang .hide_two ul .xuanzhong,
+.main form .sheng .hide_three ul .xuanzhong,
+.main form .shi .hide_three ul .xuanzhong,
+.main form .jingxiaoshang .hide_three ul .xuanzhong,
+.main form .sheng .hide_four ul .xuanzhong,
+.main form .shi .hide_four ul .xuanzhong,
+.main form .jingxiaoshang .hide_four ul .xuanzhong {
+  color: #409EFF;
+}
+.main form .sheng .hide_two ul::after,
+.main form .shi .hide_two ul::after,
+.main form .jingxiaoshang .hide_two ul::after,
+.main form .sheng .hide_three ul::after,
+.main form .shi .hide_three ul::after,
+.main form .jingxiaoshang .hide_three ul::after,
+.main form .sheng .hide_four ul::after,
+.main form .shi .hide_four ul::after,
+.main form .jingxiaoshang .hide_four ul::after {
+  content: "";
+  display: block;
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 0.03rem;
+  background-color: white;
+  position: absolute;
+  bottom: -0.05rem;
   left: 0.3rem;
   transform: rotate(45deg);
 }
