@@ -284,8 +284,8 @@ function yinchang(i) {
         // hide_three.style.height = '0rem';
         hide_four.style.height = '0rem';
         jiantou2(chexing)
-            // jiantou2(sheng)
-        jiantou2(shi)
+        jiantou2(sheng)
+            // jiantou2(shi)
         jiantou2(jsx)
     } else if (i == 4) {
         hide_one.style.height = '0rem';
@@ -293,9 +293,9 @@ function yinchang(i) {
         hide_three.style.height = '0rem';
         // hide_four.style.height = '0rem';
         jiantou2(chexing)
-            // jiantou2(sheng)
+        jiantou2(sheng)
         jiantou2(shi)
-        jiantou2(jsx)
+            // jiantou2(jsx)
     }
 
 }
