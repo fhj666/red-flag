@@ -6,11 +6,73 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
     <meta http- equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-
+    <!-- 清除默认样式 -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
-
+    <div class="main_con">
+        <!-- 第一栏 -->
+        <div class="floor1">
+            <img src="../img/h9wap.jpg" alt="">
+            <div class="text_box">
+                <h1>
+                    新红旗H9+
+                </h1>
+                <p>
+                    新高尚·至尊定制开山之作
+                </p>
+            </div>
+        </div>
+        <!-- 第二栏 -->
+        <div class="floor2">
+            <div class="floor2_con">
+                <div class="fl2_tab_hea">
+                    <ul>
+                        <span class="tab_span"></span>
+                        <li class="tab_lis">H5</li>
+                        <li class="tab_lis">H7</li>
+                        <li class="tab_lis">H9</li>
+                        <li class="tab_lis">H9+</li>
+                        <li class="tab_lis">E-HS9</li>
+                        <li class="tab_lis">E-HS3</li>
+                        <li class="tab_lis">HS5</li>
+                        <li class="tab_lis">HS7</li>
+                    </ul>
+                </div>
+                <div class="fl2_tab_con"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <html>
+<script src="../js/donghua.js"></script>
+<script src="../js/touch.min.js"></script>
+<script>
+    function setRem() {
+        var ui_w = 375;
+        // 获取屏幕的宽度
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        // 通过js动态改变html根节点字体大小
+        var html_ = document.getElementsByTagName('html')[0];
+        html_.style.fontSize = (clientWidth / ui_w) * 100 + 'px';
+    }
+    // window.onresize 浏览器被重置大小执行事件
+    window.onresize = setRem;
+    window.onload = setRem;
+    var tab_lis = document.querySelectorAll(".tab_lis");
+    var tab_span = document.querySelector(".tab_span");
+    for (var i = 0; i < tab_lis.length; i++) {
+        tab_lis[i].index = i;
+        touch.on(tab_lis[i], "tap", function () {
+            console.log(this.index);
+            console.log(this.offsetWidth);
+            console.log(this.offsetHeight);
+            tab_span.style.width = (this.offsetWidth / 100) + "rem";
+        })
+    }
+
+</script>
