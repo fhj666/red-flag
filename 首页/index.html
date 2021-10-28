@@ -42,7 +42,88 @@
                         <li class="tab_lis">HS7</li>
                     </ul>
                 </div>
-                <div class="fl2_tab_con"></div>
+                <div class="fl2_tab_con">
+                    <div class="fl2_tab_con_lis">
+                        <h1>
+                            发现新红旗 <br>
+                            从探索车型开始
+                        </h1>
+                        <h2>
+                            H5
+                        </h2>
+                        <img src="../img/H5.png" alt="">
+                    </div>
+                    <div class="fl2_tab_con_lis">
+                        <h1>
+                            发现新红旗 <br>
+                            从探索车型开始
+                        </h1>
+                        <h2>
+                            H5
+                        </h2>
+                        <img src="../img/index-car02.png" alt="">
+                    </div>
+                    <div class="fl2_tab_con_lis">
+                        <h1>
+                            发现新红旗 <br>
+                            从探索车型开始
+                        </h1>
+                        <h2>
+                            H5
+                        </h2>
+                        <img src="../img/index_02.png" alt="">
+                    </div>
+                    <div class="fl2_tab_con_lis">
+                        <h1>
+                            发现新红旗 <br>
+                            从探索车型开始
+                        </h1>
+                        <h2>
+                            H5
+                        </h2>
+                        <img src="../img/homeh9p.1ea0bcef.png" alt="">
+                    </div>
+                    <div class="fl2_tab_con_lis">
+                        <h1>
+                            发现新红旗 <br>
+                            从探索车型开始
+                        </h1>
+                        <h2>
+                            H5
+                        </h2>
+                        <img src="../img/ehs9_2_1.png" alt="">
+                    </div>
+                    <div class="fl2_tab_con_lis">
+                        <h1>
+                            发现新红旗 <br>
+                            从探索车型开始
+                        </h1>
+                        <h2>
+                            H5
+                        </h2>
+                        <img src="../img/index-car04.png" alt="">
+                    </div>
+                    <div class="fl2_tab_con_lis">
+                        <h1>
+                            发现新红旗 <br>
+                            从探索车型开始
+                        </h1>
+                        <h2>
+                            H5
+                        </h2>
+                        <img src="../img/HS5.png" alt="">
+                    </div>
+                    <div class="fl2_tab_con_lis">
+                        <h1>
+                            发现新红旗 <br>
+                            从探索车型开始
+                        </h1>
+                        <h2>
+                            H5
+                        </h2>
+                        <img src="../img/HS7.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -65,13 +146,22 @@
     window.onload = setRem;
     var tab_lis = document.querySelectorAll(".tab_lis");
     var tab_span = document.querySelector(".tab_span");
+    var fl2_tab_con_lis = document.querySelectorAll(".fl2_tab_con_lis");
     for (var i = 0; i < tab_lis.length; i++) {
         tab_lis[i].index = i;
         touch.on(tab_lis[i], "tap", function () {
-            console.log(this.index);
-            console.log(this.offsetWidth);
-            console.log(this.offsetHeight);
+            for (var j = 0; j < tab_lis.length; j++) {
+                tab_lis[j].style.color = "#999";
+                tab_lis[j].style.fontWeight = "400";
+            }
+            this.style.color = "#e60012";
+            this.style.fontWeight = "800";
             tab_span.style.width = (this.offsetWidth / 100) + "rem";
+            donghua(tab_span, this.offsetLeft);
+            for (var j = 0; j < tab_lis.length; j++) {
+                fl2_tab_con_lis[j].style.opacity = "0";
+            }
+            fl2_tab_con_lis[this.index].style.opacity = "1";
         })
     }
 
