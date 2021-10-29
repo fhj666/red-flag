@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/登录.css">
+    <script src="../js/touch.min.js"></script>
+</head>
+
+<body>
+    <div class="jinggao">
+        <img src="../img/警告.png" alt="">
+        <span>请输入手机号码</span>
+    </div>
+    <div class="jinggao1">
+        <img src="../img/警告.png" alt="">
+        <span>密码格式不对</span>
+    </div>
+    <div class="jinggao2">
+        <img src="../img/警告.png" alt="">
+        <span>两次密码输入不一样</span>
+    </div>
+    <div class="main">
+        <h2>忘记密码</h2>
+        <form action="#">
+            <div class="one">
+                <input type="text" placeholder="请输入手机号">
+            </div>
+            <div class="box_1">
+                <div class="two">
+                    <input type="text" placeholder="请输入图形验证码">
+                </div>
+                <img src="../img/yanzhengma.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="two">
+                    <input type="text" placeholder="请输入短信验证码">
+                </div>
+                <div class="yanzhenma">获取验证码</div>
+            </div>
+            <div class="four">
+                <input type="password" placeholder="请输入密码" id="pass1">
+            </div>
+            <div class="five">
+                <input type="password" placeholder="请再次输入密码" id="pass2">
+            </div>
+
+            <div class="xuanze">
+                <span class="red">密码必须包含数字和字母及特殊字符(@!=&$%) ，长度为6-20位
+                </span>
+
+            </div>
+
+            <input type="reset" value="取消" class="button1">
+            <input type="button" value="完成" class="button2">
+        </form>
+    </div>
+</body>
+<script src="../js/忘记密码.js"></script>
+
+</html>

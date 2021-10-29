@@ -1,0 +1,200 @@
+body{
+    font-size: .16rem;
+}
+
+.jinggao,.jinggao1,.jinggao2{
+    position: absolute;
+    top: .3rem;
+    left: 5%;
+    width: 90%;
+    height: .4rem;
+    background-color: #FDF6EC;
+    color: #E6A23C;
+    padding-left: .2rem;
+    display: flex;
+    align-items: center;
+    font-size: .14rem;
+    opacity: 0;
+    transition: all .5s;
+    img{
+        width: .24rem;
+        
+    }
+}
+.main{
+    padding: 1rem .3rem 0rem .3rem;
+    width: 100%; 
+    height: 5.92rem;
+    color: #fff;
+    background-image: url(../img/m_login_bg.e52e73e2.png);
+    background-size: 3.75rem;
+    h2{
+        font-size: .25rem;
+        color: #fff;
+        padding-bottom: .1rem;
+    }
+    .one,.two,.three,.four,.five{
+        width: 100%;
+        height: .4rem;
+        line-height: .4rem;
+        border-bottom: .01rem solid rgb(177, 177, 177);
+        padding: 0 .1rem 0 .1rem;
+        margin-bottom: .24rem;
+        input{
+            width: 100%;
+            height: .4rem;
+            line-height: .4rem;
+            background-color: rgba(255, 255, 255, 0);
+            font-size: .14rem;
+            color: white;
+        }
+    }
+    .three{
+        display: none;
+        margin-bottom: .4rem !important;
+    }
+    .box ,.box_1{
+        height: .6rem;
+        // display: flex;
+        // justify-content: space-between;
+        // display: none;
+        .two{
+            width: 60% ;
+            float: left;
+        }
+        .yanzhenma{
+            width: 30%;
+            height: .4rem;
+            line-height: .4rem;
+            border:  .01rem solid rgb(230,0,18);
+            border-radius: .18rem;
+            font-size: .12rem;
+            text-align: center;
+            float: right;
+            
+        }
+        img{
+            display: block;
+            float: right;
+            // margin-bottom: -.25rem;
+            position: relative;
+            top: .05rem;
+        }
+
+    }
+    
+    .xuanze{
+        display: flex;
+        align-items: center;
+        margin-top: .2rem;
+        input{
+            position: relative;
+            top:-.01rem;
+            width: .12rem;
+            height: .12rem;
+            margin-right: .05rem;
+        }
+        span{
+            font-size: .12rem;
+        }
+        .red{
+            color: rgb(230,0,18);
+        }
+        .xuanzhong{
+            color: #409EFF;   
+        }
+    }
+    [type="button"]{
+        width: 100%;
+        height: .4rem;
+        text-align: center;
+        line-height: .4rem;
+       margin-top: .2rem;
+       margin-bottom: .2rem;
+       background-color: rgb(230,0,18);
+       color: white;
+       font-size: .14rem;
+       border-radius: .1rem;
+    }
+    
+    .huo{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            width: 40%;
+            height: 50%;
+            box-sizing: border-box;
+            border-bottom: .01rem solid rgb(177, 177, 177);
+            position: absolute;
+            top:0rem;
+            left: .1rem;
+        }
+        &::before{
+            content: '';
+            display: block;
+            width: 40%;
+            height: 50%;
+            box-sizing: border-box;
+            border-bottom: .01rem solid rgb(177, 177, 177);
+            position: absolute;
+            top:0rem;
+            right: .1rem;
+        }
+    }
+
+    .denglu_1{
+        // display:none;
+        width: 1.5rem;
+        height: .3rem;
+        line-height: .3rem;
+        text-align: center;
+        margin: .1rem auto;
+        font-size: .14rem;
+    }
+    .denglu_2{
+        display:none;
+        width: 100%;
+        height: .2rem;
+        line-height: .2rem;
+        text-align: center;
+        margin: .1rem 0;
+        font-size: .14rem;
+        
+        div{
+            width: 50%;
+            float: left;
+            &:first-child{
+                border-right: .01rem solid rgb(177, 177, 177);
+            }
+        }
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: white;
+        }
+    }
+
+    .button1,.button2{
+        width: 48%;
+        height: .4rem;
+        text-align: center;
+        line-height: .4rem;
+       margin-top: .2rem;
+       margin-bottom: .2rem;
+       background-color: rgb(230,0,18);
+       color: white;
+       font-size: .14rem;
+       border-radius: .05rem;
+    }
+    .button1{
+        background-color: rgb(255, 255, 255);
+        color: gray;
+    }
+   
+   
+}
+
