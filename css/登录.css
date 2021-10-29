@@ -1,0 +1,200 @@
+body {
+  font-size: 0.16rem;
+}
+.jinggao,
+.jinggao1,
+.jinggao2 {
+  position: absolute;
+  top: 0.3rem;
+  left: 5%;
+  width: 90%;
+  height: 0.4rem;
+  background-color: #FDF6EC;
+  color: #E6A23C;
+  padding-left: 0.2rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.14rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.jinggao img,
+.jinggao1 img,
+.jinggao2 img {
+  width: 0.24rem;
+}
+.main {
+  padding: 1rem 0.3rem 0rem 0.3rem;
+  width: 100%;
+  height: 5.92rem;
+  color: #fff;
+  background-image: url(../img/m_login_bg.e52e73e2.png);
+  background-size: 3.75rem;
+}
+.main h2 {
+  font-size: 0.25rem;
+  color: #fff;
+  padding-bottom: 0.1rem;
+}
+.main .one,
+.main .two,
+.main .three,
+.main .four,
+.main .five {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-bottom: 0.01rem solid #b1b1b1;
+  padding: 0 0.1rem 0 0.1rem;
+  margin-bottom: 0.24rem;
+}
+.main .one input,
+.main .two input,
+.main .three input,
+.main .four input,
+.main .five input {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 0.14rem;
+  color: white;
+}
+.main .three {
+  display: none;
+  margin-bottom: 0.4rem !important;
+}
+.main .box,
+.main .box_1 {
+  height: 0.6rem;
+}
+.main .box .two,
+.main .box_1 .two {
+  width: 60% ;
+  float: left;
+}
+.main .box .yanzhenma,
+.main .box_1 .yanzhenma {
+  width: 30%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border: 0.01rem solid #e60012;
+  border-radius: 0.18rem;
+  font-size: 0.12rem;
+  text-align: center;
+  float: right;
+}
+.main .box img,
+.main .box_1 img {
+  display: block;
+  float: right;
+  position: relative;
+  top: 0.05rem;
+}
+.main .xuanze {
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+.main .xuanze input {
+  position: relative;
+  top: -0.01rem;
+  width: 0.12rem;
+  height: 0.12rem;
+  margin-right: 0.05rem;
+}
+.main .xuanze span {
+  font-size: 0.12rem;
+}
+.main .xuanze .red {
+  color: #e60012;
+}
+.main .xuanze .xuanzhong {
+  color: #409EFF;
+}
+.main [type="button"] {
+  width: 100%;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  background-color: #e60012;
+  color: white;
+  font-size: 0.14rem;
+  border-radius: 0.1rem;
+}
+.main .huo {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.main .huo::after {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 50%;
+  box-sizing: border-box;
+  border-bottom: 0.01rem solid #b1b1b1;
+  position: absolute;
+  top: 0rem;
+  left: 0.1rem;
+}
+.main .huo::before {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 50%;
+  box-sizing: border-box;
+  border-bottom: 0.01rem solid #b1b1b1;
+  position: absolute;
+  top: 0rem;
+  right: 0.1rem;
+}
+.main .denglu_1 {
+  width: 1.5rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  text-align: center;
+  margin: 0.1rem auto;
+  font-size: 0.14rem;
+}
+.main .denglu_2 {
+  display: none;
+  width: 100%;
+  height: 0.2rem;
+  line-height: 0.2rem;
+  text-align: center;
+  margin: 0.1rem 0;
+  font-size: 0.14rem;
+}
+.main .denglu_2 div {
+  width: 50%;
+  float: left;
+}
+.main .denglu_2 div:first-child {
+  border-right: 0.01rem solid #b1b1b1;
+}
+.main .denglu_2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.main .button1,
+.main .button2 {
+  width: 48%;
+  height: 0.4rem;
+  text-align: center;
+  line-height: 0.4rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  background-color: #e60012;
+  color: white;
+  font-size: 0.14rem;
+  border-radius: 0.05rem;
+}
+.main .button1 {
+  background-color: #ffffff;
+  color: gray;
+}

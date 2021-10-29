@@ -78,8 +78,8 @@ window.onload = function () {
 }
 // console.log(floor1.scrollTop);
 window.onscroll = function () {
-    console.log(floor1.offsetTop);
-    console.log(document.documentElement.scrollTop);
+    // console.log(floor1.offsetTop);
+    // console.log(document.documentElement.scrollTop);
     if (document.documentElement.scrollTop >= 0 && document.documentElement.scrollTop <= floor2.offsetTop - 300) {
         text_box.style.opacity = 1;
     } else {
