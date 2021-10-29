@@ -16,6 +16,10 @@ var chexi_yc = document.getElementsByClassName('chexi_yc')[0];
 var chexing = document.getElementsByClassName('chexing')[0];
 var chexing_yc = document.getElementsByClassName('chexing_yc')[0];
 
+var img_ = document.getElementsByClassName('car_img')[0].firstElementChild;
+
+
+
 // 创建车系li
 tianjia(chexi, chexi_yc, data_chexi);
 tianjia(chexing, chexing_yc, data_chexing[0]);
@@ -26,7 +30,10 @@ for (var i = 0; i < data_chexi.length; i++) {
     touch.on(li_[i], 'tap', function(e) {
         e.cancelBubble = true;
         lic_text(chexi, chexi_yc, li_, this.index);
-
+        console.log("../img/0" + this.index + ".png>");
+        console.log(img_.src);
+        // img_src = "../img/0" + this.index + ".png>"
+        img_.src = "http://127.0.0.1:5500/img/0" + this.index + ".png"
 
         // 创建车型
         tianjia(chexing, chexing_yc, data_chexing[this.index]);
