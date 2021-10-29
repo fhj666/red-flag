@@ -28,6 +28,14 @@ window.onload = function() {
         var scrollT = document.documentElement.scrollTop || document.body.scrollTop;
         //屏幕的高度
         var clientH = document.documentElement.clientHeight || document.body.clientHeight;
+
+        // 首张图中字的显示
+        var one_h1 = document.getElementsByClassName('one_text')[0];
+        if (scrollT >= 0 && scrollT <= clientH - 400) {
+            one_h1.style.opacity = 1;
+        } else {
+            one_h1.style.opacity = 0;
+        }
         // console.log(image1.offsetTop);
         // if (scrollT + 30 >= image1.offsetTop && scrollT <= image1.offsetTop + clientH) {
         //     h1.style.opacity = 1;
@@ -56,6 +64,16 @@ window.onload = function() {
                 image2[i].children[0].children[0].style.opacity = 0;
             }
             // console.log(image2[0].children[0].children[0].style.opacity);
+        }
+
+        var top = document.querySelector('.top');
+        if (top.offsetTop < scrollT) {
+            // console.log(scrollT);
+            top.style.top = (scrollT / 100) + 'rem';
+        } else if (top.offsetTop > scrollT && top.offsetTop > 667) {
+            top.style.top = (scrollT / 100) + 'rem';
+        } else {
+            top.style.top = 6.67 + 'rem';
         }
     }
     lode();
