@@ -16,6 +16,133 @@
     }
     
     .swiper-container .pic .img1 {
-        margin-top: -2.6rem;
+        margin-top: -2.4rem;
         margin-left: -5rem;
+    }
+    
+    .pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .pic>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .pic>ul>li,
+    .KW,
+    .Nm {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .KW>p,
+    .Nm>p {
+        margin-left: .05rem;
+    }
+    
+    .pic>ul>li p {
+        line-height: .3rem;
+    }
+    
+    .pic>ul>li>p {
+        font-size: .13rem;
+        color: #aaa;
+        margin-right: .05rem;
+    }
+    
+    .swiper-container .pic .img2,
+    .swiper-container .pic .img3 {
+        margin-top: -2.4rem;
+        margin-left: -5.1rem;
+    }
+    
+    .img_pic1 {
+        width: 100%;
+        height: 6.67rem;
+        background: url(../img/h7_mobile_scrn3.png) no-repeat 0 -1rem;
+        background-size: 100%;
+        text-align: center;
+    }
+    
+    .img_pic1>h1 {
+        padding-top: 1rem;
+        font-size: .17rem;
+        transition: all 1s ease-in-out .3s;
+    }
+    
+    .img_pic1>p {
+        font-size: .14rem;
+        color: #666;
+        transition: all 1s ease-in-out .3s;
+    }
+    
+    .img_pic2 {
+        width: 100%;
+        height: 6.67rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img_pic2 .img_pic2_text {
+        width: 100%;
+        height: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem .2rem .4rem;
+        text-align: center;
+        transition: all 1s ease-in-out .3s;
+    }
+    
+    .img_pic2 .img_pic2_text>h1 {
+        font-size: .17rem;
+    }
+    
+    .img_pic2 .img_pic2_text>p {
+        font-size: .14rem;
+        color: #666;
+    }
+    
+    .img_pic2>.img_pic2_pic {
+        position: relative;
+        width: 100%;
+        height: 4.47rem;
+        overflow: hidden;
+    }
+    
+    .img_pic2>.img_pic2_pic>img {
+        position: absolute;
+        left: -3.8rem;
+        top: -1.5rem;
+        transform: scale(0.35);
+    }
+    
+    .img_pic2 .img_pic3_pic>img {
+        position: absolute;
+        left: .2rem;
+        top: 0.2rem;
+        transform: scale(1.2);
+    }
+    
+    .sw2>img {
+        width: 2.95rem;
+        height: 1.71rem;
+        margin-top: .4rem;
+    }
+    
+    .sw2>h3 {
+        font-size: .16rem;
+        color: #333;
+        margin-top: .2rem;
+        padding: 0 0.15rem;
+    }
+    
+    .sw2>p {
+        font-size: .12rem;
     }

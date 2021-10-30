@@ -6,11 +6,32 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "592049",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e790",
+      "unicode_decimal": 59280
+    },
+    {
+      "icon_id": "632976",
+      "name": "菜单",
+      "font_class": "caidan1",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
       "icon_id": "1241778",
       "name": "dizhi1",
       "font_class": "dizhi1",
       "unicode": "e615",
       "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "2746603",
+      "name": "地球",
+      "font_class": "diqiu",
+      "unicode": "e689",
+      "unicode_decimal": 59017
     }
   ]
 }
