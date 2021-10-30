@@ -11,6 +11,8 @@ touch.on(denglu, 'tap', function() {
         setTimeout(function() {
             jinggao.style.opacity = 0;
         }, 2000)
+    } else {
+        window.location.href = "../首页/index.html"
     }
 });
 // 点击验证码

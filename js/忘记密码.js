@@ -32,7 +32,7 @@ touch.on(button2, 'tap', function() {
     } else if (pass1.value == pass2.value) {
         if (pattern.test(pass1.value)) {
             // 跳转页面
-            window.location.href = "../首页/index.html";
+            window.location.href = "../登录/登录.html";
         } else {
             jinggao1.style.opacity = 1;
             setTimeout(function() {
@@ -55,7 +55,3 @@ touch.on(yzm, 'tap', function() {
         }, 2000)
     }
 });
-
-
-
-// 验证密码
