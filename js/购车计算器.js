@@ -125,6 +125,7 @@ var bun2 = document.getElementsByClassName('bun2');
 var img_fangan = document.getElementsByClassName('img')[0].firstElementChild;
 var i_ = 0,
     j_ = 0;
+bun2[0].classList.add('div_xuanzhong');
 for (var i = 0; i < bun1.length; i++) {
     bun1[i].index = i;
     touch.on(bun1[i], 'tap', function() {
